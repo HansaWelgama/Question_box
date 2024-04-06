@@ -12,27 +12,35 @@
         <div class="top-outer">
             <div class="left-outer side">
                 <div class="box">
-                    <span>00:00</span>
+                    <span>
+                        <span id="min">00</span>
+                        :
+                        <span id="sec">00</span>
+                    </span>
                 </div>
                 <div class="box">
-                    <span>1/10</span>
+                    <span>
+                        <span id="count">0</span>
+                        /
+                        <span id="qNumber">5</span>
+                    </span>
                 </div>
             </div>
             <div class="right-outer side">
-                <button type="button" class="btn btn-outline-danger">Reset</button>
-                <button type="button" class="btn btn-outline-success">Start</button>
+                <button type="button" class="btn btn-outline-danger" onclick="reset()">Reset</button>
+                <button type="button" class="btn btn-outline-success" onclick="start()">Start</button>
             </div>
         </div>
         <div class="middle-outer">
-                <span>10</span>&nbsp;&nbsp;
-                <span>+</span>&nbsp;&nbsp;
-                <span>10</span>&nbsp;&nbsp;
+                <span id="num1">00</span>&nbsp;&nbsp;
+                <span id="op">+</span>&nbsp;&nbsp;
+                <span id="num2">00</span>&nbsp;&nbsp;
                 <span>=</span>&nbsp;&nbsp;
-                <span>?</span>
+                <span >?</span>
         </div>
         <div class="bottom-outer">
-            <input type="number">
-            <button type="button" class="btn btn-outline-info">Submit</button>
+            <input type="number" id="answer">
+            <button type="button" class="btn btn-outline-info" onclick="setAnswer()">Submit</button>
         </div>
 
     
