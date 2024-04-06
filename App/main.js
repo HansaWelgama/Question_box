@@ -120,6 +120,7 @@ const countdown = ()=>{
         }else{
             secElement.innerHTML=sec
         }
+        
         if(sec===59){
             min++;
             if(min<10){
