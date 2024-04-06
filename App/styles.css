@@ -32,6 +32,12 @@ body {
   height: 100%;
   border: 1px solid gray;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box span {
+  font-size: 30px;
 }
 
 .box:first-child {
