@@ -8,9 +8,12 @@ body {
 .main-outer {
   width: 800px;
   height: 450px;
-  border: 1px solid red;
+  border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .top-outer {
@@ -45,4 +48,35 @@ body {
 }
 .right-outer button:first-child {
   margin-right: 20px;
+}
+
+.middle-outer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle-outer span {
+  font-size: 35px;
+}
+
+.bottom-outer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom-outer input {
+  width: 200px;
+  height: 50px;
+  background: none;
+}
+.bottom-outer input:focus {
+  outline: none;
+}
+.bottom-outer button {
+  width: 150px;
+  border-radius: 3px;
+  margin-top: 50px;
 }/*# sourceMappingURL=styles.css.map */
