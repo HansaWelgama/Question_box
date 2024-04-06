@@ -27,8 +27,8 @@
                 </div>
             </div>
             <div class="right-outer side">
-                <button type="button" class="btn btn-outline-danger" onclick="reset()">Reset</button>
-                <button type="button" class="btn btn-outline-success" onclick="start()">Start</button>
+                <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+                <button type="button" class="btn btn-success" onclick="start()">Start</button>
             </div>
         </div>
         <div class="middle-outer">
@@ -40,10 +40,24 @@
         </div>
         <div class="bottom-outer">
             <input type="number" id="answer">
-            <button type="button" class="btn btn-outline-info" onclick="setAnswer()">Submit</button>
+            <button type="button" class="btn btn-info" onclick="setAnswer()">Submit</button>
         </div>
-
-    
+    </div>
+    <div class="table-outer">
+            <table class="table table-hover" id="result_table">
+                <thead>
+                    <tr>
+                        <th>#Number 1</th>
+                        <th>#Number 2</th>
+                        <th>Correcrt Answer</th>
+                        <th>User Answer</th>
+                        <th>Operator</th>
+                        <th>time</th>
+                        <th>is Correct</th>
+                    </tr>
+                </thead>
+                <tbody id="result_table_body"></tbody>
+            </table>
     </div>
     <Script src="main.js"></Script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
