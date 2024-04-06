@@ -10,22 +10,39 @@ body {
   height: 450px;
   border: 1px solid red;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .top-outer {
   width: 100%;
   height: 50px;
-  border: 1px solid red;
   display: flex;
 }
 
-.left-outer {
-  width: 50%;
-  height: 50px;
-  border: 1px solid red;
+.side {
+  flex: 1;
+  display: flex;
+}
+
+.box {
+  width: 120px;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.box:first-child {
+  margin-right: 20px;
 }
 
 .right-outer {
-  flex: 1;
-  border: 1px solid red;
+  justify-content: flex-end;
+}
+.right-outer button {
+  width: 150px;
+  height: 100%;
+  border-radius: 3px;
+}
+.right-outer button:first-child {
+  margin-right: 20px;
 }/*# sourceMappingURL=styles.css.map */
